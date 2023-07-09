@@ -8,17 +8,14 @@
    list-style: none;
    outline: none;
    border: none;
-
-}
+   }
 
 body {
-   background-image: url("../Images/5.jpg");
+   background-image: url("../Images/6.jpg");
    background-size: cover;
    background-repeat: no-repeat;
-
-
-
-}
+   background-color: #828282;
+   }
 
 :root {
    --light: #FFFAF3;
@@ -27,7 +24,7 @@ body {
    --green: #CADD41;
    --red: #F90817;
    --pink: #F1BDC7;
-}
+   }
 
 
 /* header */
@@ -44,20 +41,17 @@ header {
    height: 16vh;
    background: var(--dark);
    padding: 0 5vw 0 5vw;
-}
-
+   }
 
 .navbar {
    display: flex;
-
-
-}
+   }
 
 .link a {
    padding: 1rem;
    font-size: 2rem;
    color: var(--light);
-}
+   }
 
 .link a:hover {
    color: var(--green);

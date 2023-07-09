@@ -12,17 +12,17 @@ dinner.addEventListener("click", menuDinner);
 drinks.addEventListener("click", menuDrinks);
 
 function menuRowBar (){
-   image.setAttribute("src", "rowbar.png");
+   image.setAttribute("src", "rowbar-menu.jpg");
 }
 
 function menuBrunch (){
-   image.setAttribute("src","brunch.png");
+   image.setAttribute("src","brunch-menu.jpg");
 }
 
 function menuDinner(){
-   image.setAttribute("src", "dinner.jpg");
+   image.setAttribute("src", "dinner-menu.jpg");
 }
 
 function menuDrinks(){
-   image.setAttribute("src", "drinks.png")
+   image.setAttribute("src", "drinks-menu.jpg")
 }

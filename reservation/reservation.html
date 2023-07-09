@@ -22,12 +22,38 @@
       <nav class="navbar link">
          <a href="../menu/menu.html">MENU</a>
          <a href="../reservation/reservation.html">RESERVATION</a>
-         <a href="../location/location.html">LOCATION & HOURS</a>
          <a href="../about/about.html">ABOUT US</a>
       </nav>
    </header>
    <main>
-
+    
+      <div class="reserve-cont">
+         <div id="heading">
+            <h2>Please,fill in the form </h2>
+         </div>
+         <div class="form-cont">
+            <form>
+               <p> Enter the date </p>
+                  <input type="text" placeholder="mm/dd/yyyy" name="" id="date">
+               <p> Number of people</p>
+                  <input type="text" placeholder="..." name="" id="number" >
+               <p>Please, choose the time</p>
+               <select id="time">
+                  <option> 14.00 </option>
+                  <option> 15.00 </option>
+                  <option> 16.00 </option>
+                  <option> 17.00 </option>
+                  <option> 18.00 </option>
+                  <option> 19.00 </option>
+                  <option> 20.00 </option>
+                  <option> 21.00 </option>
+               </select>
+            </form>
+         </div>
+         <div class="res-btn-cont">
+            <button id="reserve-btn">Reserve</button>
+         </div>
+      </div>
    </main>
 
    <footer>
@@ -44,7 +70,7 @@
       </div>
    </footer>
 
-   
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="reservation.js"></script>
 </body>
 
