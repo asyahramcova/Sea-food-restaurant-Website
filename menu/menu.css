@@ -1,6 +1,6 @@
 * {
    font-family: 'Rancho', cursive;
-   font-size: 16px;
+   font-size: 18px;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -127,10 +127,10 @@ main {
    border-radius: 40px 0 40px 40px;
    color: var(--light);
    background-color: #F90817;
-   width: 15%;
+   width: 18%;
    letter-spacing: .1rem;
    margin: 2% 6% 2% 0;
-   font-size: 1.8rem;
+   font-size: 1.6rem;
    padding: 1rem;
    cursor: pointer;
    }
@@ -144,7 +144,7 @@ main {
    justify-content: center; 
    }
 
-
+/*footer*/
 
 footer {
    display: flex;
@@ -164,3 +164,126 @@ footer a {
    color: var(--light);
    font-size: 0, 8rem;
 }
+
+/* media queries  */
+
+
+
+@media all and(min-width: 992px) and (max-width: 1199px) {
+
+
+   * {
+      font-size: 14px;
+   }
+
+   .logo {
+      width: 18vh;
+   }
+
+   .menu-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu-btn{
+      font-size: .8rem;
+      border-radius: 20px;
+      padding: .1rem;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+   * {
+      font-size: 12px;
+   }
+   
+
+   .logo {
+      width: 16vh;
+   }
+   .menu-photo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+   .menu-btn {
+      font-size: 1rem;
+      border-radius: 20px;
+      padding: .3rem;
+   }
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+
+
+
+
+@media all and (max-width: 767px) {
+   * {
+      font-size: 10px;
+   }
+
+   .logo {
+      width: 14vh;
+   }
+
+   .menu-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu-btn {
+      font-size: .9rem;
+      border-radius: 20px;
+      padding: .2rem;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+
+@media all and (max-width: 480px) {
+   * {
+      font-size: 8px;
+   }
+
+   .logo {
+      width: 12vh;
+   }
+   .menu-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu-btn {
+      font-size: .8rem;
+      border-radius: 20px;
+      padding: .1rem;
+   }
+
+   #menu-photo {
+      background-size: contain;
+      max-height: 40vh;
+      opacity: .8;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}*/

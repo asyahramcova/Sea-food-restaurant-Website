@@ -85,36 +85,48 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background: rgba(139, 128, 133, 0.8);
+   background-color: rgb(217, 217, 217, .4);
+   box-shadow: -6px 5px 48px 19px rgba(15, 16, 17, 0.31) inset;
    width: 30vw;
    height: 55vh;
    padding:3%;
    gap:2%;
    border: --dark 1px solid;
    border-radius: 10%;
-   box-shadow: 2px 5px 31px -5px rgba(34, 60, 80, 0.6) inset;
+  
 }
+
 .form-cont {
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
    width:80% ;
    height:80%;
    gap: 1.5rem;
    }
 
+   form{
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 3%;
+   }
+
 form p{
    font-size: 20px;
-   color: var(--light);
+   color: var(--dark);
    font-family: var(--text);
-   margin: .4rem 0 .4rem 0;
+   margin: .2rem 0 .2rem 0;
    }
+
 
 form input, select{
    width: 100%;
    height: 15%;
    border-radius: 30px;
    font-family: var(--text);
-   padding: 0 .5rem;
+   padding: 1rem;
    font-weight: bolder;
 }
 
@@ -147,13 +159,14 @@ form input, select{
 #heading{
    display: flex;
    justify-content: center;
+   gap:1rem;
    width: 80%;
    height: 15%;
    }
 
 #heading h2{
-color: var(--dark);
-   font-size: 1.6rem;
+   color: var(--dark);
+   font-size: 1.4rem;
    font-family: 'Lora', serif;
    font-weight: bolder;
 }
@@ -232,3 +245,65 @@ footer a {
    color: var(--light);
    font-size: 0, 8rem;
 }
+
+/* media queries  */
+
+@media all and(min-width: 992px) and (max-width: 1199px) {
+   * {
+      font-size: 14px;
+   }
+
+   .logo {
+      width: 18vh;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+   * {
+      font-size: 12px;
+   }
+
+   .logo {
+      width: 16vh;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+
+@media all and (max-width: 767px) {
+   * {
+      font-size: 10px;
+   }
+
+   .logo {
+      width: 14vh;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}
+/*
+@media all and (max-width: 480px) {
+   * {
+      font-size: 8px;
+   }
+
+   .logo {
+      width: 12vh;
+   }
+
+   footer {
+      height: 34%;
+      position: static;
+   }
+}*/
