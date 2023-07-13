@@ -85,7 +85,7 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: rgb(217, 217, 217, .4);
+   background-color: rgba(249, 225, 225, 0.8);
    box-shadow: -6px 5px 48px 19px rgba(15, 16, 17, 0.31) inset;
    width: 30vw;
    height: 55vh;
