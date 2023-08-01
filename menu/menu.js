@@ -17,7 +17,7 @@ function menuRowBar (){
 
 function menuBrunch (){
    image.setAttribute("src","brunch-menu.jpg");
-}
+   }
 
 function menuDinner(){
    image.setAttribute("src", "dinner-menu.jpg");

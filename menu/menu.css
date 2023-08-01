@@ -72,12 +72,12 @@ header {
 /* main */
 main {
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    width: 100%;
-   height: 50%;
+   height: 74vh;
    margin-top: 16vh;
-   position:relative;
-   }
+   position: relative;
+}
 
 .parent{
    display: flex;
@@ -99,7 +99,7 @@ main {
    }
 
 .menu-btn{
-   width: 10%;
+   width: 11vw;
    max-height: 3.5rem;
    margin: 0 1% 0 1%;
    font-size: 1.3rem;
@@ -121,22 +121,24 @@ main {
    }
 
 
-.btn-order {
-   align-self: flex-end;
-   position:absolute;
-   border-radius: 40px 0 40px 40px;
-   color: var(--light);
-   background-color: #F90817;
-   width: 18%;
-   letter-spacing: .1rem;
-   margin: 2% 6% 2% 0;
-   font-size: 1.6rem;
-   padding: 1rem;
-   cursor: pointer;
-   }
+.btn-order{
+border-radius: 40px 0 40px 40px  ;
+color: var(--light);
+background-color: #F90817;
+width: 15%;
+letter-spacing: .1rem;
+margin-top: 10px;
+margin-left: 72vw;
+font-size: 1.6rem;
+padding: 1rem;
+position: absolute;
+z-index: 1000;
+}
 
 .btn-order:hover{
    background-color: #CADD41;
+   cursor: pointer;
+      color: #2D2525;
    }
 
 .menu-container{
@@ -170,12 +172,9 @@ footer a {
 
 
 @media all and(min-width: 992px) and (max-width: 1199px) {
-
-
    * {
       font-size: 14px;
    }
-
    .logo {
       width: 18vh;
    }
@@ -187,7 +186,7 @@ footer a {
    }
 
    .menu-btn{
-      font-size: .8rem;
+      font-size: .6rem;
       border-radius: 20px;
       padding: .1rem;
    }
@@ -215,15 +214,21 @@ footer a {
    flex-direction: column;
    align-items: center;
 }
+
+.btn-order{
+   width: 15%;
+   font-size: 1rem;
+   padding: .5rem;
+}
    .menu-btn {
       font-size: 1rem;
       border-radius: 20px;
       padding: .3rem;
    }
-   footer {
-      height: 34%;
-      position: static;
-   }
+  footer {
+     height: 25%;
+     position: fixed;
+  }
 }
 
 
@@ -244,6 +249,12 @@ footer a {
       align-items: center;
    }
 
+      .btn-order {
+         width: 15%;
+         font-size: 1rem;
+         padding: .5rem;
+         margin-top: 5px;
+      }
    .menu-btn {
       font-size: .9rem;
       border-radius: 20px;
@@ -251,8 +262,8 @@ footer a {
    }
 
    footer {
-      height: 34%;
-      position: static;
+      height: 25%;
+      position: fixed;
    }
 }
 
@@ -269,7 +280,12 @@ footer a {
       flex-direction: column;
       align-items: center;
    }
-
+  .btn-order {
+     width: 15%;
+     font-size: 1rem;
+     padding: .5rem;
+     margin-top: 5px;
+  }
    .menu-btn {
       font-size: .8rem;
       border-radius: 20px;
@@ -281,9 +297,9 @@ footer a {
       max-height: 40vh;
       opacity: .8;
    }
-
-   footer {
-      height: 34%;
-      position: static;
-   }
-}*/
+  footer {
+     height: 34%;
+     position: fixed;
+  }
+  
+}
